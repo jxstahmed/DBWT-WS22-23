@@ -1,0 +1,89 @@
+1)
+    Anfrage Header:
+      - Accept -> Der Header stellt klar welche Formate er akzeptiert, hier handelt es sich um folgende:
+                text/html,
+                application/xhtml+xml
+                application/xml;q=0.9
+                image/avif
+                image/webp
+                */*;q=0.8
+      -Cache Control -> max-age=0 heißt, das der jeweilige Client die Seite cachen kann, jedoch muss er diesen immer revalidieren.
+      -Connection -> Dies sagt aus, ob eine Verbindung nach dem Nutzen, geschlossen oder aufrecht erhalten wird.
+                        Diese Verbindung bleibt auch danach noch erhalten: "keep-alive"
+      -Accept-Language -> Dieser Wert sagt aus, welcher Sprachen der Client akzeptiert.
+                        Hierbei handelt es sich um:
+                           de
+                           en-US;q=0.7
+                           en;q=0.3
+      -Host -> Dieses Attribute teilt dem Server mit, welchen Host er anfragt. Hier "www.fh-aachen.de"
+
+
+
+      Antwort Header:
+        -Cache Control -> Zeigt dem Client an, auf welche Art die jeweiligen Caches gespeichert werden dürfen.
+                        Hier folgendes: "private, no-store" (Eine lokale Speicherung, Proxys dürfen nicht speichern)
+        -Connection -> "keep-alive"
+        -Content-Language -> Hier ist die Sprache "de" (Zeigt an welche Sprache der Content hat.)
+        -Content-Type -> Zeigt an, aus welchem Type der aktuelle Content besteht.
+                       Hier ist es: "text/html; charset=utf-8"
+        -Server -> Dies zeigt dem Client an, auf was für einem Server der Host aktuell läuft.
+                 Hier ist es: "nginx/1.18.0 (Ubuntu)"
+
+
+2)
+    Anfrage Header:
+
+        Accept -> Dies sagt aus welche MIME Type vom Client akzeptiert werden. Hier folgende:
+        	text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8
+
+        Accept-Encoding -> Welche Entschlüsselungsart der Client unterstützt. Folgende in diesem Fall:
+        	gzip, deflate, br
+
+        Accept-Language -> Welche Sprachen für den Content akzeptiert werden:
+        	de,en-US;q=0.7,en;q=0.3
+
+        Connection -> Sagt aus ob die Verbindung persistent ist oder nicht. Hier ist sie persistent:
+        	keep-alive
+
+        Content-Length -> Zeigt an wie lange der gesamte Content ist.
+        	100
+
+        Content-Type -> Zeigt den Typ des Content an, welcher der Client anfragt.
+        	application/x-www-form-urlencoded
+
+        Cookie -> Zeigt bereits gespeicherte Cookies an, welche mit dem Server in Verbindung stehen.
+        	Phpstorm-c070b51d=b3cd9f2d-0416-4e70-a795-f780f2bb472e
+
+        Host -> Sagt dem Server, welchen Host der Client gerade versucht zu kontaktieren.
+        	localhost:63342
+
+        Origin -> Zeigt die Herkunft der Anfrage an.
+        	http://localhost:63342
+
+        Referer -> Zeigt die genaue Zieladresse der Seite an, welche den Request getätigt hat.
+        	http://localhost:63342/E-Mensa%20Werbeseite/beispiele/newsletteranmeldung.html?_ijt=ffosmrhu6b8ntc6sjcgmi0u2ih&_ij_reload=RELOAD_ON_SAVE
+
+        Sec-Fetch-Mode -> Zeigt dem Server, um welche Art Request es handelt. Bild laden, durch HTML seiten wechseln oder anderen ressourcen.
+        	navigate
+
+        Sec-Fetch-Site -> Zeigt dem Server, ob eine Anfrage von der selben Seite, einer anderen Seite oder einem User kommt.
+        	same-origin
+
+        Sec-Fetch-User -> Wird im Header mitgesendet, wenn eine Anfrage durch einen User aufgeführt wird. Wert bleibt immer gleich.
+        	?1
+
+        Upgrade-Insecure-Requests -> Dies gibt dem Server die Information, ob der Client entschlüsselte Antworten bevorzugt oder nicht.
+        	1
+
+        User-Agent -> Sagt dem Server, welcher Browser genutzt wurde.
+        	Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:105.0) Gecko/20100101 Firefox/105.0
+
+
+
+    Anfrage Body -> Formdaten und Eingabe ist:
+    KEY:             VALUE:
+    geschlecht      "Herr"
+    vorname         "Ahmed"
+    nachname        "Jumaa"
+    email           "ahmed@jumaa.de"
+    daten           "Datenschutzhinweis+gelesen

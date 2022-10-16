@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren:
+- Ahmed,
+- Mohammed,
+-->
+
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <title>Aufgabe 5</title>
+</head>
+<body>
+
+<fieldset>
+  <legend>Anmeldung</legend>
+  <form method="post" action="formdata.html">
+    <input type="radio" name="geschlecht" id="frau" value="Frau">Frau
+    <br>
+    <input type="radio" name="geschlecht" id="herr" value="Herr">Herr
+    <br>
+    <label for="vorname">Vorname*:</label><br>
+    <input required id="vorname" name="vorname" type="text" style="width:225px" placeholder="Bitte geben sie Ihren Vornamen ein">
+    <br>
+    <label for="nachname">Nachname*:</label><br>
+    <input required id="nachname" name="nachname" type="text" style="width:225px" placeholder="Bitte geben sie Ihren Nachnamen ein">
+    <br>
+    <label for="email">E-Mail*:</label><br>
+    <input required id="email" name="email" type="text" style="width:225px" placeholder="Bitte geben sie Ihren E-Mail ein">
+    <br>
+    <label for="benachrichtigung">Benachrichtigungsinterval</label><br>
+    <select style="width:100px" id="benachrichtigung">
+      <option value="tag">Tag</option>
+      <option value="woche">Woche</option>
+      <option value="monat">Monat</option>
+    </select>
+
+    <br><br>
+
+    <input required type="checkbox" name="daten" id="daten" value="Datenschutzhinweis gelesen">Datenschutzhinweis gelesen
+    <br><br>
+    <input type="submit" value="Abschicken">
+
+    <p> <sup>*)</sup> Eingabe sind Pflicht</p>
+  </form>
+</fieldset>
+
+</body>
+</html>

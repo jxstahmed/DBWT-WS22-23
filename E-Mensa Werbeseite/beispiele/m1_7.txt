@@ -1,0 +1,3 @@
+1)
+<table border="1"> -> Das ist nicht mehr aktuell, da dies durch CSS ausgetauscht wurde.
+                      Deswegen lieber CSS nutzen, statt border.
