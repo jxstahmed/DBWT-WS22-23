@@ -1,0 +1,158 @@
+body {
+    padding-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 1px solid black;
+    margin-bottom: 1%;
+}
+
+a {
+    color: #40beaa;
+}
+
+header {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+header hr{
+    margin-top: 20px;
+}
+#head {
+    display: grid;
+    grid-template-columns: 15% 65%;
+    gap: 5px;
+}
+#head > div {
+    border: 1px solid black;
+}
+#logo {
+    width: 100%;
+    height: 80%;
+    object-fit: contain;
+    padding: 2px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#menu {
+    display: inline-grid;
+}
+#menu ul {
+    align-self: center;
+}
+#menu li {
+    display: inline;
+    list-style-type: none;
+    padding: 0 10px;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 15% 65%;
+    gap: 5px;
+}
+#main:nth-child(2) {
+}
+#main2 {
+    display: grid;
+    grid-template-rows: 175px auto;
+    gap: 5px;
+}
+#main2 > h2 {
+    font-family: Georgia, sans-serif;
+}
+
+#essen {
+    border: 1px solid black;
+    margin-top: -15px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.karte {
+    margin-top: -15px;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.karte > tbody > tr > td, .karte > thead > tr > th {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.karte > tbody {
+    text-align: center;
+}
+
+.karte > tbody > tr:nth-child(1) > td:first-child, tr:nth-child(2) > td:first-child {
+    text-align: initial;
+    font-size: large;
+}
+
+#zahlen {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    gap: 5px;
+    font-weight: bold;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    align-items: center;
+}
+#zahlen > div {
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+#eingaben {
+    margin-top: -15px;
+    margin-bottom: 20px;
+}
+#news input {
+    width: 120px;
+}
+#news label {
+    font-weight: initial;
+}
+#news > thead {
+    text-align: left;
+}
+#submit {
+    margin-left: 50px;
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 190px;
+}
+#sprache {
+    width: 150px;
+    background-color: white;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+
+#wichtig {
+    font-size: 14px;
+    margin-top: -10px;
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#bye {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+footer li {
+    display: inline;
+    list-style-type: none;
+    border-right: 1px solid grey;
+    padding: 0 8px;
+}
+footer li:last-child{
+    border-right: none;
+}

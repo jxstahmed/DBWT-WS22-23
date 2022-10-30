@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren:
+- Ahmed, Jumaa, 3515653
+- Mohammed, Hammado, 3515286
+-->
+
+  <html lang="de">
+  <head>
+    <meta charset="UTF-8">
+    <title>Dossier</title>
+
+    <style>
+
+      table > thead > tr > th, table > tbody > tr > td  {
+        border: 1px solid black;
+      }
+
+      th, td {
+        padding: 5px;
+      }
+
+      .auf  {
+        border-collapse: collapse;
+      }
+
+    </style>
+
+  </head>
+  <body>
+  <h1>Zeitaufwand</h1>
+  <table class="auf">
+    <thead>
+    <tr>
+      <th>Aufgabe</th>
+      <th>geschätze Zeit</th>
+      <th>tatsächliche Zeit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+      <td>Aufgabe 1</td>
+      <td>10 Minute</td>
+      <td>2 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 2</td>
+      <td>30 Minute</td>
+      <td>20 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 3</td>
+      <td>80 Minute</td>
+      <td>60 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 4</td>
+      <td>1 Minute</td>
+      <td>1 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 5</td>
+      <td>60 Minute</td>
+      <td>30 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 6</td>
+      <td>50 Minute</td>
+      <td>10 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 7</td>
+      <td>60 Minute</td>
+      <td>20 Minute</td>
+    </tr>
+    <tr>
+      <td>Aufgabe 8</td>
+      <td>90 Minute</td>
+      <td>30 Minute</td>
+    </tr>
+    </tbody>
+  </table>
+
+  <h1>Aufgabe 3</h1>
+  <p>1)<br>
+    Zeile 12 -> Es hat ein Komma gefehlt.<br>
+    Zeile 21 -> Es hat ein "]" nach dem Array gefehlt.<br>
+    Zeile 41 -> Es wurde nach der If eine Klammer vergessen.<br>
+    Zeile 59 -> Das Keyword "function" hat gefehlt. Ebenso sollte das der Parameter "array" und "float :" entfernt werden.
+  </p>
+  <p>2)<br>
+    <b>Funktionalität:</b><br>
+    Der Benutzer kann in der meal.php anhand eines Filters nach Bewertungen suchen. (Text Suche)
+    <br><br>
+
+    <b>Ansteuerung des Webbrowsers:</b><br>
+    PHP-Inline in HTML, somit werden die PHP Variablen in HTML dargestellt.<br>
+    Dadurch kann man "foreach" nutzen um mehrere Elemente darzustellen.<br>
+    Bei der Suche wird das "form" mit GET Methode verwendet.<br>
+  </p>
+
+  <p>3)<br>
+    Zeile 2&3 -> const = Werte können später nicht verändert werden.<br>
+    Zeile 41 -> empty = Überprüft, ob der Wert leer oder NULL ist.<br>
+    Zeile 43 -> foreach (mit as) = Wir loopen durch das Array, und speichern jeden Wert als Rating ab, um darauf zuzugreifen.<br>
+    Zeile 59 -> function = Deklariert eine Funktion, welche anschließend genutzt werden kann.<br>
+    Zeile 72 -> <?php ?> = Nutzung von Inline PHP innerhalb von HTML, damit PHP-Code ausgeführt werden kann.<br>
+  </p>
+
+  </body>
+  </html>
