@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<!--
+- Praktikum DBWT. Autoren:
+- Ahmed, Jumaa
+- Mohammed, Hammado
+-->
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <title>Dossier</title>
+
+    <style>
+
+        table > thead > tr > th, table > tbody > tr > td  {
+            border: 1px solid black;
+        }
+
+        th, td {
+            padding: 5px;
+        }
+
+        .auf  {
+            border-collapse: collapse;
+        }
+
+    </style>
+
+</head>
+<body>
+<h1>Zeitaufwand</h1>
+<table class="auf">
+    <thead>
+    <tr>
+        <th>Aufgabe</th>
+        <th>geschätze Zeit</th>
+        <th>tatsächliche Zeit</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Aufgabe 1</td>
+        <td>5 Minute</td>
+        <td>5 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 2</td>
+        <td>10 Minute</td>
+        <td>15 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 3</td>
+        <td>20 Minute</td>
+        <td>10 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 4</td>
+        <td>30 Minute</td>
+        <td>20 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 5</td>
+        <td>60 Minute</td>
+        <td>30 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 6</td>
+        <td>40 Minute</td>
+        <td>25 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 7</td>
+        <td>30 Minute</td>
+        <td>15 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 9</td>
+        <td>120 Minute</td>
+        <td>30 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 10</td>
+        <td>10 Minute</td>
+        <td>10 Minute</td>
+    </tr>
+    <tr>
+        <td>Aufgabe 11</td>
+        <td>60 Minute</td>
+        <td>150 Minute</td>
+    </tr>
+    </tbody>
+</table>
+
+<h1>Aufgabe 3 & 6</h1>
+<p>
+    Siehe die Bilder im Screenshot
+</p>
+<h1>Aufgabe 7</h1>
+<p>
+    ALTER TABLE gericht_hat_allergen ADD INDEX `cag_index` (code);
+    ALTER TABLE gericht_hat_allergen ADD INDEX `gidag_index` (gericht_id);
+    <br><br>
+    ALTER TABLE gericht_hat_kategorie ADD INDEX `cak_index` (gericht_id);
+    ALTER TABLE gericht_hat_kategorie ADD INDEX `gik_index` (kategorie_id);
+    <br><br>
+    ALTER TABLE kategorie ADD INDEX `gelternid_index` (eltern_id);
+    <br><br>
+    ALTER TABLE gericht_hat_kategorie ADD FOREIGN KEY (`gericht_id`)
+    REFERENCES `gericht` (`id`);
+    <br><br>
+    ALTER TABLE gericht_hat_kategorie ADD  FOREIGN KEY (`kategorie_id`)
+    REFERENCES `kategorie` (`id`);
+    <br><br>
+    ALTER TABLE gericht_hat_allergen ADD  FOREIGN KEY (`gericht_id`)
+    REFERENCES `gericht` (`id`);
+    <br><br>
+    ALTER TABLE gericht_hat_allergen ADD  FOREIGN KEY (`code`)
+    REFERENCES `allergen` (`code`);
+    <br><br>
+    ALTER TABLE kategorie ADD  FOREIGN KEY (`eltern_id`)
+    REFERENCES `kategorie` (`id`);
+
+</p>
+<h1>Aufgabe 11</h1>
+<p>1)<br>
+    - Probleme bei dem Indexing der Einträge und somit bei der Suche.<br>
+    - Dateien sind meistens Lokal und könnten eventuell Kaputt/Verloren gehen.<br>
+    - Zeit- und Arbeitsaufwand bei großen Mengen von Dateien.<br>
+    - Keine Relation zwischen Dateien (z.B. Join, Union, usw., alles sollte .<br><br>
+</p>
+
+</body>
+</html>
